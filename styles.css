@@ -130,12 +130,12 @@ button:focus{
   top: 50%;
   transform: translate(-50%,-50%) rotate(45deg);
 }
-.main-nav{
+.main-nav {
   position: absolute;
   right: 0;
-  top: 100%;
-  background-color: #eecb80e6;
-  width: 280px;
+  top: 5em;
+  background-color: #ffffffd4;
+  width: 300px;
   text-align: left;
   height: 0px;
   overflow: hidden;
@@ -170,26 +170,9 @@ button:focus{
 .logo:hover{
   transform: translateY(-50%) scale(1.1);
 }
-@media(max-width:1000px){
-  .nav-left {
-    z-index: 2;
-  }
-  .nav-right {
-    z-index: 1;
-  }
-  .masthead {
-  height: 80px;
-  }
-  .logo {
-    width: 180px;
-    transform: translateY(-50%);
-    left: 0.5em;
-  }
-  .logo:hover {
-    transform: translateY(-50%) scale(1.1);
-  }
-  .nav-left {
-    left: 180px;
+@media(max-width:900px){
+  .masthead-relative{
+    width: 100%;
   }
 }
 @media(max-width:700px){
@@ -340,6 +323,45 @@ button:focus{
   color: #853423;
   border-radius: 1em;
 }
+@media(max-width:1200px){
+  .video-container{
+    height: 650px;
+  }
+}
+@media(max-width:1080px){
+  .top-container h2 {
+    font-size: 60px;
+  }
+  .video-container{
+    height: 650px;
+  }
+  #bannerGirl {
+    position: absolute;
+    left: 95%;
+    transform: translateX(-95%);
+    bottom: 0px;
+    z-index: 1;
+    height: 600px;
+  }
+}
+@media(max-width:980px){
+  .video-container video {
+    height: 100%;
+    transform: translateX(-50%) scale(1.5);
+  }
+  .top-container h2 {
+    font-size: 55px;
+  }
+  .top-container h3 {
+    font-size: 40px;
+  }
+  .top-container article a {
+    font-size: 30px;
+  }
+  #bannerGirl {
+    height: 550px;
+  }
+}
 /*=======*/
 .video-container2{
   width: 100%;
@@ -415,6 +437,25 @@ button:focus{
     color: gold;
     text-transform: uppercase;
     font-size: 30px;
+}
+@media(max-width:1200px){
+  .video-container2{
+    height: 650px;
+  }
+}
+@media(max-width:1080px){
+  .video-container2{
+    height: 600px;
+  }
+  .second-container article{
+    width: 90%;
+  }
+}
+@media(max-width:1000px){
+  .video-container2 video {
+    height: 100%;
+    transform: translateX(-50%) scale(1.5);
+  }
 }
 /*==============*/
 .third-container{
@@ -529,6 +570,17 @@ button:focus{
   margin-bottom: 0.5em;
   color: #7d3c2a;
 }
+@media(max-width:900px){
+  .third-container header h2 {
+    font-size: 50px;
+  }
+  .buffet-gallery ul li {
+    height: 400px;
+  }
+  .third-container section {
+    height: 400px;
+  }
+}
 /*==== fourth content ====*/
 .about-section{
   background-color: #5d7a8d;
@@ -592,6 +644,11 @@ button:focus{
   padding: 0.5em;
   text-transform: uppercase;
   width: 50%;
+}
+@media(max-width:900px){
+  .about-section article header {
+    height: 300px;
+  }
 }
 /*===========*/
 footer{
