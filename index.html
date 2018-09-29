@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta name="viewport" content="user-scalable = yes, width=320, initial-scale=1">
+
+  </head>
+  <!-- ==== -->
+  <body style="margin:0">
+    <!-- ===== -->
+    <div class="masthead">
+      <div class="masthead-relative">
+        <nav class="nav-left">
+          <ul>
+            <li class="nav-left-li-left"><button type="button" class="menu-btn" name="button" id="menu-btn">
+                  <hr class="menu-btn-hr-1"/>
+                  <hr class="menu-btn-hr-2"/>
+                  <hr class="menu-btn-hr-3"/>
+                </button>
+                <nav id="main-nav" class="main-nav">
+                  <a href="#">option 1</a>
+                  <a href="#">option 2</a>
+                  <a href="#">option 3</a>
+                  <a href="#">option 4</a>
+                  <a href="#">option 5</a>
+                </nav>
+            </li>
+            <li class="nav-left-li-right"><button type="button" name="button" id="phone-btn" class="phone-btn"><i class="material-icons">phone</i></button></li>
+          </ul>
+        </nav>
+        <div class="logo"><img src="images/logo.png"/></div>
+        <nav class="nav-right">
+          <ul>
+              <li><button type="button" name="button">gallery</button></li>
+            <li><button type="button" name="button">packages</button></li>
+            <li><button type="button" name="button">about us</button></li>
+            <li><button type="button" name="button">contact</button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- ====== -->
+
+    <div class="wrapper">
+      <div class="top-container video-container">
+        <section>
+          <article>
+            <h2>
+              maui's</br>
+              <span>newest</span></br>
+              <span>hit</span> luau
+            </h2>
+          </br>
+            <h3><span>every</span> wednesday</br>
+                <span>starting at</span> 5:30 PM</br>
+            </h3>
+          </br>
+            <a href="#">book now</a>
+          </article>
+        </section>
+        <img id="bannerGirl" src="images/girl2.png" alt="">
+        <video autoplay loop muted webkit-playsinline playsinline poster="#">
+          <source src="video/banner2.mp4">
+        </video>
+      </div>
+      <!-- ========== -->
+      <div class="second-container video-container2">
+        <section>
+          <article>
+            <header>the show</header>
+            <p><span>"K</span>upuna (ancestors) have paved a cultural path for us and our future as Hawaiian people.  It is our kuleana (responsibility) to perpetuate this culture and share our knowledge so that the ways of our Kupuna are never forgotten."</p>
+            <a href="#">learn more</a>
+          </article>
+        </section>
+        <div class="overlay">
+        </div>
+        <video autoplay loop muted webkit-playsinline playsinline poster="#">
+          <source src="video/smoke.mp4">
+        </video>
+      </div>
+      <div class="third-container">
+        <header>
+          <h2>the feast</h2>
+          <h3>experience the taste of maui</h3>
+        </header>
+        <section>
+          <div class="buffet-gallery active">
+            <ul>
+              <li> <p>description</p> <img src="images/IMG_9212.jpg" alt=""> </li>
+              <li> <p>description</p> <img src="images/img_002.jpeg" alt=""> </li>
+              <li> <p>description</p> <img src="images/IMG_9214.jpg" alt=""> </li>
+            </ul>
+          </div>
+          <div class="buffet-gallery">
+            <ul>
+              <li> <p>description</p> <img src="images/IMG_0106.jpg" alt=""> </li>
+              <li> <p>description</p> <img src="images/img_5664.jpeg" alt=""> </li>
+              <li> <p>description</p> <img src="images/IMG_5660.jpeg" alt=""> </li>
+            </ul>
+          </div>
+        </section>
+        <div class="btn-cont">
+          <button type="button" name="button" onclick="tabToggle(1,'buffet-gallery',' active')">1</button>
+          <button type="button" name="button" onclick="tabToggle(2,'buffet-gallery',' active')">2</button>
+          <button type="button" name="button" onclick="tabToggle(3,'buffet-gallery',' active')">3</button>
+        </br>
+          <a href="#">see full menu</a>
+        </div>
+      </div>
+      <!-- ======== -->
+      <div class="about-section">
+        <h2>
+          journey through polynesia
+        </h2>
+        <section>
+          <article>
+            <header>
+            <img src="images/photo0.png" alt="">
+            </header>
+            <p>starring <span>kanalia masoe</span>
+            </br>
+            winner of
+            </br>
+            <span>island idol 2018!</span>
+            </p>
+            <button type="button" name="button">see video</button>
+          </article>
+          <article>
+            <header>
+              <img src="images/IMG_6454.jpeg" alt="">
+            </header>
+            <p>perfect for families
+            </br>
+            <span>group discounts</span> for
+            </br>
+            parties of<span> 10</span> or</span> more</span>
+            </p>
+            <a href="#">learn more</a>
+          </article>
+          <article>
+            <header>
+              <img src="images/IMG_6650.JPG" alt="">
+            </header>
+            <p><span>book with us</span>
+            </br>
+            to experience
+            </br>
+            <span>maui's new hit luau</span>
+            </p>
+            <a href="#">book now</a>
+          </article>
+        </section>
+      </div>
+      <!-- ======== -->
+      <footer>
+        <ul>
+          <li class="footer-left">
+            <header>
+              contact us!
+            </header>
+            <p>Ka'anapali Beach Club</br>
+            104 Ka'anapali Shores Place</br>
+            Lahaina, Maui, Hawaii 96761
+          </br>
+          <a href="#">888-582-8858</a>
+          </p>
+          </li>
+          <li class="footer-center">
+            <header>
+              follow us!
+            </header></br>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+          </li>
+          <li class="footer-right">
+            <a href="#">privacy policy</a></br>
+            <a href="#">site map</a></br>
+            <a href="#">FAQ</a></br>
+            <a href="#">terms and conditions</a></br>
+          </li>
+        </ul>
+      </footer>
+    </div>
+      <script src="toggle.js" type="text/javascript"></script>
+      <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>
