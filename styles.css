@@ -174,8 +174,6 @@ button:focus{
   .masthead-relative{
     width: 100%;
   }
-}
-@media(max-width:700px){
   .masthead{
     margin-top: 0;
   }
@@ -187,6 +185,9 @@ button:focus{
   .nav-left{
     left: 150px;
   }
+  .nav-right{
+    right: 0;
+  }
   .menu-btn {
     width: 30px;
     height: 24px;
@@ -195,7 +196,9 @@ button:focus{
     font-size: 32px !important;
   }
 }
-@media(max-width:600px){
+/* @media(max-width:700px){
+} */
+@media(max-width:700px){
   .main-nav {
     position: fixed;
     width: 100%;
@@ -210,7 +213,7 @@ button:focus{
   .nav-right ul{
     width: 100%;
     padding: 0;
-    background-color: brown;
+    background-color: #53444f;
   }
   .nav-left {
     left: 0;
@@ -362,6 +365,27 @@ button:focus{
     height: 550px;
   }
 }
+@media(max-width:800px){
+  .video-container video {
+    height: 100%;
+    transform: translateX(-50%) scale(2);
+  }
+  #bannerGirl {
+    height: 500px;
+  }
+  .top-container h2 span {
+    font-size: 34px;
+  }
+  .top-container h2 {
+    font-size: 50px;
+  }
+  .top-container h3 {
+    font-size: 35px;
+  }
+  .top-container h3 span {
+    font-size: 25px;
+  }
+}
 /*=======*/
 .video-container2{
   width: 100%;
@@ -455,6 +479,17 @@ button:focus{
   .video-container2 video {
     height: 100%;
     transform: translateX(-50%) scale(1.5);
+  }
+}
+@media(max-width:800px){
+  .video-container2 video {
+    transform: translateX(-50%) scale(2);
+  }
+  .second-container section article header {
+    font-size: 50px;
+  }
+  .second-container section article p {
+    font-size: 18px;
   }
 }
 /*==============*/
@@ -579,6 +614,13 @@ button:focus{
   }
   .third-container section {
     height: 400px;
+  }
+}
+@media(max-width:800px){
+  .third-container header {
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 }
 /*==== fourth content ====*/
