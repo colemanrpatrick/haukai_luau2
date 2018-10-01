@@ -126,8 +126,8 @@ button:focus{
 .main-nav {
   position: absolute;
   right: 0;
-  top: 5em;
-  background-color: #ffffffd4;
+  top:4.8em;
+  background-color: #ffffffeb;
   width: 300px;
   text-align: left;
   height: 0px;
@@ -157,17 +157,22 @@ button:focus{
   width: 200px;
   transition: 0.3s;
 }
-.phone{
-  left: 240px;
+.phone {
   position: absolute;
   color: white;
+  left: 50%;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-50%,-50%);
 }
 .phone a{
   font-weight: 300;
   color: gold;
-  font-size: 24px;
+  font-size: 30px;
+}
+.phone a::before{
+  content: "call us ";
+  font-size: 20px;
+  text-transform: uppercase;
 }
 .logo img{
   width: 100%;
@@ -233,6 +238,9 @@ button:focus{
   .nav-left-li-right{
     text-align: right;
   }
+  .main-nav {
+    top: 8.5em;
+  }
   .masthead-relative ul li button {
     font-size: 14px;
   }
@@ -243,6 +251,33 @@ button:focus{
   }
   .logo:hover{
     transform: translate(-50%,-50%) scale(1.1);
+  }
+  .phone {
+    position: absolute;
+    color: white;
+    right: 0px;
+    top: 5.6em;
+    left: auto;
+    background-color: #00000094;
+    transform: none;
+    padding: 0.5em;
+    width: 100%;
+    text-align: center;
+  }
+  .phone a{
+    font-weight: 300;
+    color: gold;
+    font-size: 24px;
+  }
+  .phone a::before{
+    content: "call us ";
+    display: none;
+  }
+}
+@media(max-width:600px){
+  .phone a{
+    top:5em;
+    font-size: 20px;
   }
 }
 /*=======================*/
@@ -557,13 +592,71 @@ button:focus{
 }
 @media(max-width:800px){
   .video-container2 video {
-    transform: translateX(-50%) scale(2);
+    transform: translate(-50%,-50%) scale(2);
+  }
+  .second-container section article {
+      background: -moz-linear-gradient(left,rgba(0, 0, 0, 0.78) 0%, rgba(0,0,0,0) 100%);
+      background: -webkit-linear-gradient(left,rgba(0, 0, 0, 0.78) 0%, rgba(0,0,0,0) 100%);
+      background: linear-gradient(to right,rgba(0, 0, 0, 0.78) 0%, rgba(0,0,0,0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e1c47', endColorstr='#007db9e8',GradientType=1 );
+      padding: 5em 1em;
+      left: 0;
+      transform: translate(0%,-50%);
   }
   .second-container section article header {
     font-size: 50px;
   }
   .second-container section article p {
     font-size: 18px;
+    line-height: 2em;
+  }
+  .video-container2 .overlay{
+    background-position: 65% 0%;
+  }
+}
+@media(max-width:700px){
+  .video-container2{
+    height: 600px;
+  }
+  .second-container section article header {
+    font-size: 40px;
+  }
+  .second-container section article p{
+    font-size: 16px;
+  }
+
+  .second-container section article p span{
+    font-size: 25px;
+  }
+  .second-container article a{
+      font-size: 20px;
+  }
+}
+@media(max-width:600px){
+  .video-container2 .overlay{
+    background-position: 75% 0%;
+  }
+  .video-container2 video {
+    height: 100%;
+    transform: translate(-50%,-50%) scale(2.5);
+  }
+}
+@media(max-width:500px){
+  .video-container2{
+    height: 500px;
+  }
+  .second-container section article header {
+    font-size: 35px;
+  }
+  .second-container section article p{
+    font-size: 14px;
+  }
+
+  .second-container section article p span{
+    font-size: 20px;
+  }
+  .second-container article a{
+      font-size: 18px;
   }
 }
 /*==============*/
