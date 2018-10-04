@@ -2,8 +2,10 @@
 /* toggle.js v.1.0
 /*///////////////*/
 console.log("ready")
+
+
 /*///////////////*/
-/* toggle.js v.1.0
+//toggle events//
 /*///////////////*/
 
 //* ==== this toggle ===*//
@@ -80,6 +82,7 @@ function tagNameToggle(tagName,activeClass,tagNameIndex){
 }
 
 /*=======*/
+// el = document.getElementById("masthead");
 
 /*== tabs toggle ==*/
 function tabToggle(number,element,activeClass){
@@ -129,3 +132,38 @@ function tabToggle(number,element,activeClass){
 //     console.log("array after push:"," ",classArray,"element index:",elementIndex,"array length:",classArray.length);
 //   }
 // }
+
+/*///////////////*/
+//scroll events//
+/*///////////////*/
+// window.onbeforeunload = function () {
+//   window.scrollTo(0, 0);
+// }
+
+window.onscroll = function(){
+
+  var el = document.getElementById("masthead");
+
+  el.style.transition = "0.3s";
+
+  // console.log("pageYOffset returns :",window.pageYOffset);
+  //
+  // console.log("element client height returns :",el.clientHeight);
+  //
+  // console.log("element scroll height returns :",el.scrollHeight);
+  //
+  // console.log("element offset height returns :", el.offsetHeight);
+
+  if(window.pageYOffset > el.offsetHeight){
+
+    // console.log("greater than el height |", "page height :", window.pageYOffset, "element height :", el.offsetHeight);
+
+    el.style.background = "#6b5f7e";
+
+  }else{
+
+    // console.log("lesser than el height |", "page height :", window.pageYOffset, "element height :", el.offsetHeight);
+
+    el.style.background = "transparent";
+  }
+}
