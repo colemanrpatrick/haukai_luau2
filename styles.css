@@ -794,17 +794,8 @@ button:focus{
   .third-container header h3 {
     font-size: 18px;
   }
-<<<<<<< HEAD
 }
-#gallery{
-  display: table;
-  width: 100%;
-  overflow-x: hidden;
-  max-width: 1680px;
-  margin: 0 auto;
-  position: relative;
-=======
-}
+
 #gallery{
   display: table;
   width: 100%;
@@ -837,7 +828,6 @@ button:focus{
   background-position: center;
 }
 .gallery-nav{
-  /* width: 800px; */
   display: table-cell;
   padding-top: 0.5em;
   padding-right: 0.5em;
@@ -920,7 +910,7 @@ button:focus{
   .gallery-nav {
     position: relative;
     overflow-y: hidden;
-    overflow-x: hidden;
+    overflow-x: scroll;
     height: 200px;
     width: 90%;
   }
@@ -1326,7 +1316,7 @@ button:focus{
   .gallery-nav {
     position: relative;
     overflow-y: hidden;
-    overflow-x: hidden;
+    overflow-x: scroll;
     height: 200px;
     width: 90%;
   }
