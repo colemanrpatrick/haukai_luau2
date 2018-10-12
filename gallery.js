@@ -63,35 +63,23 @@ function gallerySlider(num){
   slides[slideIndex-1].style.display = "block";
 }
 
-$(".scroll-zone-right").on('mouseenter',function(){
+$(".scroll-zone-right").on('click',function(){
 
   var rightPos = $(".gallery-nav").scrollLeft();
 
-  $(".gallery-nav").animate({scrollLeft: rightPos + 600},2500)
+  $(".gallery-nav").animate({scrollLeft: rightPos + 60},0300)
 
 });
 //
-$(".scroll-zone-right").on('mouseleave',function(){
 
-  $(".gallery-nav").stop(true);
-
-})
-
-
-$(".scroll-zone-left").on('mouseenter',function(){
+$(".scroll-zone-left").on('click',function(){
 
   var rightPos = $(".gallery-nav").scrollLeft();
 
-  $(".gallery-nav").animate({scrollLeft: rightPos - 100},2500)
+  $(".gallery-nav").animate({scrollLeft: rightPos - 60},0300)
 
 });
 //
-$(".scroll-zone-left").on('mouseleave',function(){
-
-  $(".gallery-nav").stop(true);
-
-})
-
 /*=== events ==*/
 
 for (var i = 0; i < thumbnail.length; i++) {
