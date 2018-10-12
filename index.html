@@ -30,21 +30,12 @@
                   <a href="#">more content</a>
                 </nav>
             </li>
-            <li class="nav-left-li-right"><button type="button" name="button" id="phone-btn" class="phone-btn"><i class="material-icons">phone</i></button></li>
           </ul>
         </nav>
         <div class="logo"><img src="images/logo.png"/></div>
         <div class="phone">
           <a href="#">1-888-582-8858</a>
         </div>
-        <!-- <nav class="nav-right">
-          <ul>
-              <li><button type="button" name="button">gallery</button></li>
-            <li><button type="button" name="button">packages</button></li>
-            <li><button type="button" name="button">about us</button></li>
-            <li><button type="button" name="button">contact</button></li>
-          </ul>
-        </nav> -->
       </div>
     </div>
     <!-- ====== -->
@@ -58,20 +49,16 @@
               polyenesia</h2>
               <p>at the scenic ocean front</br>
               <b>ka'anapali beach club</b></p>
-              </br>
-                <h3>
-                  <span>every</span> wednesday</br>
-                  <span>starting at</span> 5:30 PM</br>
-                </h3>
-              </br>
+            </br>
+              <h3>
+                <span>every</span> wednesday</br>
+                <span>starting at</span> 5:30 PM</br>
+              </h3>
+            </br>
             </header>
             <a href="#">book now</a>
           </article>
         </section>
-        <!-- <img id="bannerGirl" src="images/girl2.png" alt=""> -->
-        <!-- <video autoplay loop muted webkit-playsinline playsinline poster="#">
-          <source src="video/banner2.mp4">
-        </video> -->
       </div>
       <!-- ========== -->
       <div class="second-container-wrapper">
@@ -81,7 +68,7 @@
             <article>
               <header>the view</header>
               <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              <button class="container-toggle-button" type="button" name="button" onclick="plusSlides(-1)"> <i class="material-icons">arrow_back_ios</i> </button>
+              <button class="container-toggle-button" type="button" name="button" onclick="plusSlides(-1)"><i class="material-icons">arrow_back_ios</i> </button>
               <button class="container-toggle-button" type="button" name="button" onclick="plusSlides(1)"> <i class="material-icons">arrow_forward_ios</i> </button>
               <br/>
               <a href="#">learn more</a>
@@ -119,29 +106,42 @@
         <header>
           <h2>gallery</h2>
         </header>
-        <section>
-          <div class="buffet-gallery active">
-            <ul>
-              <li> <img id="img-1" src="images/img_4.png" alt=""> </li>
-              <li> <img id="img-2" src="images/img_5.JPG" alt=""> </li>
-              <li> <img id="img-3" src="images/img_7.jpeg" alt=""> </li>
-            </ul>
+        <div id="gallery">
+          <div class="gallery-stage">
+            <div id="gallery-main" class="gallery-main"></div>
+            <ul id="gallery-rotor" class="gallery-rotor">
+              <section>
+                <button type="button" name="button" class="closeBtn" onclick="toggleGallery()"><i class="material-icons">highlight_off</i></button>
+                <button type="button" name="button" class="gallery-next" onclick="sliderPlus(+1)"><i class="material-icons">keyboard_arrow_right</i></button>
+                <button type="button" name="button" class="gallery-back" onclick="sliderPlus(-1)"><i class="material-icons">keyboard_arrow_left</i></button>
+                <li class="slide"><img src="images/img1.png"/></li>
+                <li class="slide"><img src="images/img2.png"/></li>
+                <li class="slide"><img src="images/img3.png"/></li>
+                <li class="slide"><img src="images/img4.png"/></li>
+                <li class="slide"><img src="images/img5.png"/></li>
+                <li class="slide"><img src="images/img6.png"/></li>
+              </section>
+            </li>
           </div>
-          <div class="buffet-gallery">
-            <ul>
-              <li> <img id="img-4" src="images/img_1.jpg" alt=""> </li>
-              <li> <img id="img-5" src="images/img_2.jpg" alt=""> </li>
-              <li> <img id="img-6" src="images/img_6.png" alt=""> </li>
-            </ul>
+          <div class="gallery-nav">
+            <nav id="gallery-scroll">
+              <ul class="gallery-row">
+                <li> <img class="thumbNail" src="images/img1_thumb.png" alt="" galleryAttr="images/img1.png"> </li>
+                <li> <img class="thumbNail" src="images/img2_thumb.png" alt="" galleryAttr="images/img2.png" index="2"> </li>
+                <li> <img class="thumbNail" src="images/img3_thumb.png" alt="" galleryAttr="images/img3.png" index="3"> </li>
+              </ul>
+              <ul class="gallery-row">
+                <li> <img class="thumbNail" src="images/img4_thumb.png" alt="" galleryAttr="images/img4.png" index="4"> </li>
+                <li> <img class="thumbNail" src="images/img5_thumb.png" alt="" galleryAttr="images/img5.png" index="5"> </li>
+                <li> <img class="thumbNail" src="images/img6_thumb.png" alt="" galleryAttr="images/img6.png" index="6"> </li>
+              </ul>
+            </nav>
           </div>
-        </section>
-        <div class="btn-cont">
-          <button type="button" name="button" onclick="tabToggle(1,'buffet-gallery',' active')">1</button>
-          <button type="button" name="button" onclick="tabToggle(2,'buffet-gallery',' active')">2</button>
-          <button type="button" name="button" onclick="tabToggle(3,'buffet-gallery',' active')">3</button>
-        </br>
-          <a href="#">see full menu</a>
+          <div class="scroll-zone-left"> <span></span> </div>
+          <div class="scroll-zone-right"> <span></span> </div>
         </div>
+        <!-- ======== -->
+        <!-- ======== -->
       </div>
       <!-- ======== -->
       <div class="about-section">
@@ -159,23 +159,25 @@
             </br>
             <span>island idol 2018!</span>
             </p>
-            <button type="button" name="button">see video</button>
+            <button type="button" name="button" onclick="idToggle('about-video-container-2','active')">see video</button>
+            <!--- === -->
+            <div id="about-video-container-2" class="about-video-container">
+              <div class="about-video-container-close" onclick="idToggle('about-video-container-2','active')"><i class="material-icons">highlight_off</i></div>
+              <section>
+                <iframe src="https://www.youtube.com/embed/o01GdmTHCfw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </section>
+            </div>
+            <!--- === -->
           </article>
           <article>
             <header>
-              <img src="images/img_3.png" alt="">
-            </header>
-            <p>perfect for families
-            </br>
-            <span>group discounts</span> for
-            </br>
-            parties of<span> 10</span> or</span> more</span>
-            </p>
-            <a href="#">learn more</a>
-          </article>
-          <article>
-            <header>
-              <img src="images/IMG_6650.JPG" alt="">
+              <div id="youtube-button" type="button" name="button" onclick="idToggle('about-video-container-1','active')"></div>
+              <div id="about-video-container-1" class="about-video-container">
+                <div class="about-video-container-close" onclick="idToggle('about-video-container-1','active')"><i class="material-icons">highlight_off</i></div>
+                <section>
+                  <iframe src="https://www.youtube.com/embed/0NYjlUrI3i4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </section>
+              </div>
             </header>
             <p><span>book with us</span>
             </br>
@@ -185,9 +187,78 @@
             </p>
             <a href="#">book now</a>
           </article>
+          <article>
+            <header>
+              <img src="images/IMG_6650.JPG" alt="">
+            </header>
+            <p>perfect for families
+            </br>
+            <span>group discounts</span> for
+            </br>
+            parties of<span> 10</span> or</span> more</span>
+            </p>
+            <a href="#">learn more</a>
+          </article>
         </section>
       </div>
-      <!-- ======== -->
+  <!-- ======== -->
+      <div class="review-section">
+        <div class="review-wrapper">
+  <h3>trip advisor reviews</h3>
+  <article>
+    <header>
+      "Fun and entertaining evening"
+    </header>
+    <section>
+      <i class="material-icons">adjust</i>
+      <i class="material-icons">adjust</i>
+      <i class="material-icons">adjust</i>
+      <i class="material-icons">adjust</i>
+      <i class="material-icons">adjust</i>
+      <i class="material-icons">adjust</i>
+    </section>
+    <p>
+      The venue for this Luau is really nice, on the "front yard" of a resort. The food, drinks and entertainment were really good. I was really happy with the event.
+    </p>
+  </article>
+  <article>
+    <header>
+      "great fun"
+    </header>
+    <section>
+      <i class="material-icons">adjust</i>
+      <i class="material-icons">adjust</i>
+      <i class="material-icons">adjust</i>
+      <i class="material-icons">adjust</i>
+      <i class="material-icons">adjust</i>
+      <i class="material-icons">adjust</i>
+    </section>
+    <p>
+      Entertainment was top notch and acoustics were great. Food and drinks were excellent and plenty of it. Great fun will would do again.
+    </p>
+  </article>
+  <article>
+    <header>
+      "Huaka'i Luau Maui - Amazing!""
+    </header>
+    <section>
+      <i class="material-icons">adjust</i>
+      <i class="material-icons">adjust</i>
+      <i class="material-icons">adjust</i>
+      <i class="material-icons">adjust</i>
+      <i class="material-icons">adjust</i>
+      <i class="material-icons">adjust</i>
+    </section>
+    <p>
+      This was a great experience of our first Luau in Maui. Beautiful Venue and truly an amazing performance of the Journey through Polynesia.
+    </p>
+  </article>
+  <div class="ta-link">
+  <a href="#"> <img src="images/tripadvisor.png"/><br><p>more reviews</p></a>
+  </div>
+</div>
+</div>
+  <!-- ====================== -->
       <footer>
         <ul>
           <li class="footer-left">
@@ -219,6 +290,7 @@
       </footer>
     </div>
       <script src="toggle.js" type="text/javascript"></script>
+      <script src="gallery.js" type="text/javascript"></script>
       <script src="main.js" type="text/javascript"></script>
   </body>
 </html>

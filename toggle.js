@@ -1,7 +1,7 @@
 /*///////////////*/
 /* toggle.js v.1.0
 /*///////////////*/
-console.log("ready")
+console.log("toggle.js ready")
 
 
 /*///////////////*/
