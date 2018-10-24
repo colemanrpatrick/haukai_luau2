@@ -1,0 +1,144 @@
+.head1 {
+	color:#832b07;
+	font-size:26px;
+	text-transform:uppercase;
+}
+.head2 {
+	color:#ffffff;
+	font-size:19px;
+	font-weight:normal;
+	padding-bottom:8px;
+	display:block;
+}
+.buttons{
+	position: absolute;
+	left: 0;
+	bottom: 50%;
+	z-index: 999;
+	width: 100%;
+	height: auto;
+}
+
+/*===============================*/
+.review-section{
+  background-color: #f4a792;
+  background-image: url("images/bg4.png");
+  background-size: cover;
+  background-position: center;
+}
+.review-section{
+  font-size: 14px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.review-wrapper{
+	width: 1050px;
+	margin: 0 auto;
+}
+@media(max-width:1050px){
+  .review-wrapper{
+    width: 100%;
+  }
+}
+.dot{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: green;
+	border: 4px double green;
+}
+.review-section h3 {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 50px;
+  padding: 1em;
+  line-height: 1.25em;
+}
+.review-section article {
+  width: 80%;
+  margin: 1em auto;
+  padding: 1em;
+  background-color: white;
+  border: 1.5em solid rgba(255,255,255,0.5);
+  border-radius: 2em;
+  text-align: left;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+.review-section article p{
+  font-weight: 300;
+  font-size: 18px;
+}
+.review-section article i {
+  color: #009688;
+  font-size: 2em;
+  font-weight: bold;
+}
+.review-section article header {
+  font-size: 24px;
+}
+.review-section article header iframe{
+	width: 100%;
+}
+.ta-link{
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+}
+.ta-link a {
+  padding: 1em;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+	transition: 0.3s;
+}
+.ta-link i{
+  font-size: 40px;
+}
+.ta-link p {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+@media(max-width:1200px){
+	.review-section,.article-cont{
+		width: 100%;
+	}
+}
+@media(max-width:800px){
+  .review-section h3{
+    font-size: 40px;
+  }
+	.review-section,.article-cont{
+		width: 100%;
+	}
+}
+@media(max-width:700px){
+  .review-section h3{
+    font-size: 30px;
+  }
+	.review-section article {
+    padding: 0.5em;
+    border: 1em solid rgba(255,255,255,0.5);
+	}
+}
+@media(max-width:600px){
+  .review-section article i{
+      font-size: 20px;
+  }
+  .review-section article p{
+    font-size: 16px;
+  }
+  .review-section article header {
+    font-size: 18px;
+  }
+}
+@media(max-width:400px){
+  .review-section article p{
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+}
+/*========*/

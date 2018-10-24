@@ -1,0 +1,243 @@
+.head1 {
+	color:#832b07;
+	font-size:26px;
+	text-transform:uppercase;
+}
+.head2 {
+	color:#ffffff;
+	font-size:19px;
+	font-weight:normal;
+	padding-bottom:8px;
+	display:block;
+}
+.buttons{
+	position: absolute;
+	left: 0;
+	bottom: 50%;
+	z-index: 999;
+	width: 100%;
+	height: auto;
+}
+/*==== fourth content ====*/
+.about-section{
+	background-image: url("images/bg8.png");
+	background-size: cover;
+}
+.about-section h2 {
+	width: 100%;
+	padding: 1.5em 1.5em 0em 1.5em;
+	line-height: 1em;
+	font-size: 40px;
+	text-transform: uppercase;
+	color: gold;
+	text-align: center;
+}
+.about-section section{
+	width: 100%;
+	display: table;
+	padding: 1em;
+}
+.about-section article{
+	display: table-cell;
+	width: 33.3%;
+	vertical-align: top;
+	text-align: center;
+	position: relative;
+	border: 1em solid transparent;
+	-moz-background-clip: padding;     /* Firefox 3.6 */
+ -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+ background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+}
+.about-section article header{
+	width: 100%;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+}
+.about-section article header img{
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.about-section article p {
+	padding-top: 1em;
+	font-size: 20px;
+	color: #fde490;
+	text-transform: uppercase;
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
+.about-section article span {
+		font-size: 30px;
+}
+.about-section a, .about-section button{
+	display: inline-block;
+	background-color: gold;
+	font-size: 20px;
+	text-align: center;
+	color: #7d3c2a;
+	padding: 0.5em;
+	text-transform: uppercase;
+	width: 50%;
+	cursor: pointer;
+}
+/* youtube */
+#youtube-button {
+		border: 1px solid black;
+		height: 100%;
+		width: 100%;
+		margin: 0 auto;
+		max-width: 350px;
+		position: relative;
+		cursor: pointer;
+		background-image: url("images/fire_spinner.png");
+		background-size: cover;
+}
+#youtube-button:after{
+	content: "watch video";
+	position: absolute;
+	bottom: 1em;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: white;
+}
+.about-video-container{
+	position: fixed;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	transition: 0.3s;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+	z-index: 999;
+	background-color: black;
+}
+.about-video-container.active{
+	width: 800px;
+	height: 500px;
+}
+@media(max-width:850px){
+	.about-video-container.active{
+		width: 90%;
+		height: 500px;
+	}
+}
+@media(max-width:650px){
+	#youtube-button:after{
+		font-size: 16px;
+		text-align: left;
+		background-color: black;
+		width: 85%;
+		padding: 0.5em;
+	}
+}
+.about-video-container iframe{
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 90%;
+}
+.about-video-container.active iframe{
+	display: block;
+}
+.about-video-container section{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.about-video-container-close{
+	position: absolute;
+	right: 2px;
+	top: 2px;
+	background-color: #00000080;
+	cursor: pointer;
+	z-index: 4;
+	border-radius: 50%;
+	height: 50px;
+	transition: 0.3s;
+}
+.about-video-container-close .material-icons{
+	font-size: 50px;
+	color: white;
+}
+.about-video-container-close:hover{
+	transform: scale(1.2);
+}
+@media(max-width:900px){
+	.about-section article header {
+		height: 300px;
+	}
+	.about-section article p {
+		padding-top: 1em;
+		font-size: 18px;
+		height: 190px;
+	}
+	.about-section a, .about-section button {
+		width: 100%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		border: 0;
+	}
+	.about-section article span {
+		font-size: 25px;
+	}
+}
+@media(max-width:700px){
+	.about-section h2 {
+		font-size: 30px;
+	}
+	.about-section article {
+		border: 0.25em solid transparent;
+		width: 100%;
+		height: auto;
+		display: table;
+	}
+	.about-section article header {
+		height: 250px;
+		width: 50%;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	#youtube-button {
+			width: 208px;
+	}
+	.about-section article p {
+		height: auto;
+		width: 50%;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.about-section a, .about-section button {
+	    padding: 0.25em;
+	    left: auto;
+	    width: 50%;
+	    right: auto;
+	    position: relative;
+	    display: block;
+	    margin: 0.5em auto;
+	}
+}
+@media(max-width:400px){
+	.about-section article p{
+		font-size: 14px;
+	}
+	.about-section article span {
+		font-size: 18px;
+	}
+	.about-section a, .about-section button {
+		right: 0em;
+		width: 48%;
+	}
+}
+/*===========*/

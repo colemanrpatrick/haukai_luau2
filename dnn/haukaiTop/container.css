@@ -1,0 +1,221 @@
+.head1 {
+	color:#832b07;
+	font-size:26px;
+	text-transform:uppercase;
+}
+.head2 {
+	color:#ffffff;
+	font-size:19px;
+	font-weight:normal;
+	padding-bottom:8px;
+	display:block;
+}
+.buttons{
+	position: absolute;
+	left: 0;
+	bottom: 50%;
+	z-index: 999;
+	width: 100%;
+	height: auto;
+}
+/*=======================*/
+/*=======*/
+/*54,107,132,1*/
+.top-container{
+  width: 100%;
+  height: 700px;
+  position: relative;
+	text-align: left;
+  border: 1px solid black;
+}
+.top-container::before{
+  content: "";
+  background: url("images/topBanner.png");
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  background-size: cover;
+  background-position: 75% 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 700px;
+  z-index: -1;
+}
+@media(max-height:700px){
+  .top-container{
+    height: 600px;
+  }
+  .top-container::before{
+    height: 600px;
+  }
+}
+@media(max-height:600px){
+  .top-container{
+    height: 500px;
+  }
+  .top-container::before{
+    height: 500px;
+  }
+}
+
+/*========*/
+
+.top-container section{
+  width: 50%;
+  height: 100%;
+  position: relative;
+  background: -moz-linear-gradient(left,rgba(17, 23, 66, 0.6)  0%,rgba(17, 23, 66, 0.4) 50%, rgba(125,185,232,0) 100%);
+  background: -webkit-linear-gradient(left,rgba(17, 23, 66, 0.6),rgba(17, 23, 66, 0.4) 50%, rgba(125,185,232,0) 100%);
+  background: linear-gradient(to right,rgba(17, 23, 66, 0.6),rgba(17, 23, 66, 0.4) 50%,rgba(125,185,232,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e1c47', endColorstr='#007db9e8',GradientType=1 );
+}
+.top-container section article{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  text-align: center;
+}
+.top-container h2 {
+  width: 100%;
+  text-align: center;
+  color: floralwhite;
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: 1.25em;
+  letter-spacing: 2px;
+  color: white;
+}
+.top-container p{
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 1.5em;
+  color:white;
+}
+.top-container h3 {
+  width: 100%;
+  text-align: center;
+  color: floralwhite;
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: 0.9em;
+  letter-spacing: 2px;
+}
+.top-container h3 span{
+  font-size: 30px;
+}
+.top-container article a {
+  font-size: 40px;
+  text-transform: uppercase;
+  padding: 0.25em 1em;
+  background-color: #e1c242;
+  color: #853423;
+  border-radius: 1em;
+}
+@media(max-width:1080px){
+  .top-container h2 {
+    font-size: 50px;
+  }
+  .top-container br{
+    display: none;
+  }
+}
+@media(max-width:980px){
+  .top-container h2 {
+    font-size: 45px;
+  }
+  .top-container h3 {
+    font-size: 40px;
+  }
+  .top-container article a {
+    font-size: 30px;
+  }
+}
+@media(max-width:800px){
+  .top-container section article {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    text-align: center;
+  }
+  .top-container section {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 1em;
+  }
+  .top-container section hr{
+    border: 0;
+    height: 20px;
+  }
+  .top-container section article header{
+    padding-bottom: 1em;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .top-container h2 {
+    font-size: 40px;
+  }
+  .top-container p {
+    font-size: 24px;
+  }
+  .top-container h3 {
+    font-size: 30px;
+  }
+  .top-container h3 span {
+    font-size: 20px;
+  }
+  .top-container article a {
+    font-size: 24px;
+    display: inline-block;
+    margin-bottom: 0.5em;
+  }
+}
+@media(max-width:600px){
+  .top-container section{
+    z-index: 4;
+    background: rgba(17, 23, 66, 0.6);
+  }
+  .top-container h2 {
+    font-size: 30px;
+    line-height: 1.5em;
+  }
+  .top-container p {
+    font-size: 20px;
+  }
+  .top-container h3 {
+    font-size: 24px;
+    line-height: 2em;
+  }
+  .top-container h3 span {
+    font-size: 18px;
+  }
+}
+@media(max-width:450px){
+  .top-container h2 {
+    font-size: 28px;
+    width: 70%;
+    line-height: 1em;
+    margin: 0.5em auto;
+  }
+  .top-container p {
+    font-size: 18px;
+    width: 60%;
+    margin: auto;
+  }
+  .top-container h3 {
+    font-size: 20px;
+    line-height: 1.25em;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .top-container h3 {
+    font-size: 20px;
+    line-height: 1em;
+    margin: 0.5em auto;
+  }
+}
